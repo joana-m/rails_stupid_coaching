@@ -1,0 +1,15 @@
+<h1>Answer</h1>
+
+<p>
+<% if @question_asked == 'I am going to work'%>
+<%= 'Great' %>
+  <% elsif @question_asked.end_with?('?') %>
+  <%= 'Silly question, get dressed and go to work!'%>
+  <% else%>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
+
+<br>
+<br>
+<%= link_to 'Ask a question', ask_path  %>
+</p>
